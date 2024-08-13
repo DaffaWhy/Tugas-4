@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Eskul</title>
+    <link rel="stylesheet" href="style.css">
+    <section>
+        <header>
+            <div class="logo">
+                <img src="spiderman.jpg" alt="">
+                <h1>Formulir Pendaftaran Eskul</h1>
+            </div>
+        </header>
+    </section>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Biodata</legend>
+            <label for="fname">Nama lengkap:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="fborn">Tempat lahir:</label><br>
+            <input type="text" id="fborn" name="fborn"><br>
+            <label form="date">Tanggal Lahir:</label><br>
+            <input type="date" id="date" name="date"><br>
+            <label for="fusia">Usia:</label><br>
+            <input type="number" min="12" max="20"><br>
+            <label for="fkel">Jenis Kelamin:</label><br>
+            <input type="radio" id="Laki-laki" name="Kelamin" value="Laki-laki">
+            <label for="Laki-laki">Laki-Laki</label>
+            <input type="radio" id="Perempuan" name="Kelamin" value="Perempuan">
+            <label for="Perempuan">Perempuan</label>
+            <input type="radio" id="Ambatron" name="Kelamin" value="Ambatron">
+            <label for="Ambatron">Ambatron</label><br>
+            <label for="Agama">Agama</label>
+            <select id="Agama" name="Agama">
+            <option value="Islam">Islam</option>
+            <option value="Islam">Kristen Katolik</option>
+            <option value="Islam">Kristen Protestan</option>
+            <option value="Islam">Buddha</option>
+            <option value="Islam">Hindu</option>
+            <option value="Islam">Kong hu chu</option>
+            <option value="Islam">Penghayat Kepercayaan</option>
+            </select><br>
+            <label for="fname">Kelas:</label><br>
+            <input type="text" id="fname" name="fname">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Alamat</legend>
+            <label for="Alam">Alamat Lengkap:</label><br>
+            <input type="text" id="Alam" name="Alam"><br>
+            <label for="rw">RW:</label><br>
+            <input type="number" min="1" max="20"><br>
+            <label for="rt">RT:</label><br>
+            <input type="number" min="1" max="20"><br>
+            <label for="desa">Desa/Kelurahan:</label><br>
+            <input list="desa" name="desa">
+            <datalist id="desa">
+                <option value="Cipeda"></option>
+                <option value="Jambudipa"></option>
+                <option value="Padaasih"></option>
+                <option value="Pasir halang"></option>
+                <option value="Pasir langu"></option>
+                <option value="Tugumukti"></option>
+                <option value="Sadang mekar"></option>
+            </datalist><br>
+            <label for="kecamatan">Kecamatan:</label><br>
+            <input list="kecamatan" name="kecamatan">
+            <datalist id="kecamatan">
+                <option value="Cisarua"></option>
+                <option value="Parongpong"></option>
+                <option value="Lembang"></option>
+                <option value="Ngamprah"></option>
+                <option value="Padalarang"></option>
+                <option value="Cipatat"></option>
+                <option value="Cikalong Wetan"></option>
+                <option value="Batujajar"></option>
+            </datalist><br>
+            <label for="kota">Kabupaten/kota:</label><br>
+            <input list="kota" name="kota">
+            <datalist id="kota">
+                <option value="Kab.Bandung Barat"></option>
+                <option value="Bandung"></option>
+                <option value="Cianjur"></option>
+                <option value="Sumedang"></option>
+                <option value="Cimahi"></option>
+            </datalist><br>
+            <label for="pro">Provinsi:</label><br>
+            <input list="pro" name="pro">
+            <datalist id="pro">
+                <option value="Jawa Barat"></option>
+                <option value="Jawa Tengah"></option>
+                <option value="Jawa Timur"></option>
+                <option value="DKI Jakarta"></option>
+            </datalist><br>
+            <label for="kode">Kode Pos:</label><br>
+            <input type="text" id="kode" name="kode"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kontak</legend>
+            <label for="phone">No telepon:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9] {3}-[0-9] {3}-[0-9] {3}"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Akun</legend>
+            <label for="fname">Username:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="pass">
+            <label for="pass">Konfirmasi Password:</label>
+            <input type="password" id="pass" name="pass">
+        </fieldset>
+
+        <fieldset>
+            <legend>Ekstrakulikuler bisa pilih lebih dari satu</legend>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Pramuka</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Sepak bola</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Volly</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Paskibra</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Basket</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Tari</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Karate</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Pencak Silat</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> PMR</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Taekwondo</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Tenis Meja</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Renang</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Seni Rupa</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Seni musil</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Karawitan</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload Persyaratan</legend>
+            <label for="myfile">Upload Pas Foto 3X4:</label>
+            <input type="file" id="myfile" name="myfile">
+            <label for="Kfile">Upload Kartu Tanda Pelajar:</label>
+            <input type="file" id="Kfile" name="Kfile"><br>
+        </fieldset> 
+        <input type="submit" value="Submit">
+         <input type="reset" value="Reset">
+    </form>
+
+    <footer>
+        <p>Hak cipta Daffa f.f &copy;2024</f></p>
+    </footer>
+</body>
+</html>
